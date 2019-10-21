@@ -1,15 +1,15 @@
-###Author: George Sarfo
+### Author: George Sarfo
 
-###Desc: ETL Pipeline for POS Product Matching for Iheart_Jane
+### Desc: ETL Pipeline for POS Product Matching for Iheart_Jane
 
-###Date: 10/21/2019
+### Date: 10/21/2019
 
 
-##How To Run:
+## How To Run:
 
 **Copy all the files in George-Sarfo-Submission into a single folder and run main_program.py or seed.py from CMD Line**
 
-###Details
+### Details
 
 
 1. Assume a DEV environment
@@ -23,7 +23,7 @@
 8. Historical records of each pos_json_file is kept with a timestamp - to allow for record keeping and reprocessing when need be
 9. Packages required are imported as part of script - in a production env requirements.txt will be used 
 
-###High Level Logic and Flow
+### High Level Logic and Flow
 
 Main Program imports the db_connection module and the fuzzy matching module
 
@@ -31,7 +31,7 @@ main program calls fuzzy matching module which contains the main_brain function 
 
 the final output contains the pos_product, matched_iheart_jane_product, matched_jane_product_id and the fuzzy_match_score
 
-###Fuzzy Scoring 
+### Fuzzy Scoring 
 
 Fuzzy Scoring uses **Levenstein distance** that allows for two long strings of words to matched based on similarity of the words in each string,
 
